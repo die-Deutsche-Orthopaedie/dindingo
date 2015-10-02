@@ -104,4 +104,5 @@ ps.
 
 pps. 
 
-	由于此脚♂本杀♂伤力巨大，考虑到dindingo的所有者可能还处在攒他的第一个一百万好掏首付买房哄骗傻♂逼丈母娘的阶段，这个脚♂本我就暂且不放出了。至少也得等我拖完其所有片♂子再说。
+	由于此脚♂本杀♂伤力极大，基本上达到了战♂术♂核♂武的级别，考虑到dindingo.com的所有者可能还处在攒他的第一个一百♂万好掏首付买房哄骗他的未来傻♂逼丈母娘的阶段，这个脚♂本我就暂且不放出了。至少也得等我拖完其所有片♂子再说。
+	Due to the destructive leth♂ality of this tac♂ti♂cal nuc♂lear weapon grade scr♂ipt, with all due res♂pect, considerin' the owner(s) of the dindingo.com may in the state of getting' his first mill♂ion to pay the downpayment on a flat to please his future stupid mother♂fuck♂in' dou♂che♂bag mother-in-law ass♂hole, I will NOT release the scr♂ipt. At least until I finish dumpin' ALL their pro♂nos. 
