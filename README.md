@@ -1,6 +1,6 @@
-die deutsche Orthopädie proundly presents
+die♂deutsche♂Orthopädie proundly presents
 
-德国骨科倾情演绎
+德♂国♂骨♂科倾情演绎
 
 
 ALL in ONE DinDinGo Pronography Dump Script
@@ -128,9 +128,9 @@ parameter (fid/tid/folder/file):
 		Actually i haven't developed that "find-<tid>-inside-somewhere-in-the-HTML-file" feature 23333333333333
 		其实我并没有开发从文件里挖掘tid的功能（主要是文件里的tid太多，我怎么知道哪个是这个文件的tid），23333333333333
 
-HAVE A NICE DUMP, die deutsche Orthopädie out
+HAVE A NICE DUMP, die♂deutsche♂Orthopädie out
 
-拖♂站愉♂快，我要去德国骨科预订床位了
+拖♂站愉♂快，我要去德♂国♂骨♂科预订床位了
 
 
 ps. 
