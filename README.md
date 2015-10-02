@@ -1,4 +1,5 @@
-# dindingou
+# ALL in ONE DinDinGo Pronography Dump Script
+
 die deutsche Orthopädie proundly presents
 
 ALL in ONE DinDinGo Pronography Dump Script
