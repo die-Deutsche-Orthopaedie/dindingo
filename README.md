@@ -25,7 +25,7 @@ and use new kind of parameter interpreters
 
 usage: 
 
-用法：
+用♂法：
 
 
 all.in.one.sh [options] parameter
