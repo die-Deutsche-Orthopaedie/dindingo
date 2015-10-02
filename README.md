@@ -5,7 +5,7 @@ die♂deutsche♂Orthopädie proundly presents
 
 ALL in ONE DinDinGo Pronography Dump Script
 
-多合一dindingo拖A片脚本
+多合一dindingo拖A♂片脚本
 
 
 combine forumdump.sh and combined.distiller.and.downloader.plus.singlefile.support.sh
