@@ -88,7 +88,7 @@ Theorically you CAN put contradictin' options together,
 
 but ONLY the LAST ones will be accepted as final options
 
-但只有最后出现的选项才会被采纳，成为最终的选项（因为我的参数解释器每遍历到一个选项就会把代表选项的全局变量设为相应的值，当然最后出现的才是最终的选项）
+但只有最后出现的选项才会被采纳，成为最终的选项（因为我的参数解析器每遍历到一个选项就会把代表选项的全局变量设为相应的值，当然最后出现的才是最终的选项）
 
 
 help:
