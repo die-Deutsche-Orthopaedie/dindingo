@@ -81,6 +81,20 @@ sidefield/threads/flie:
 		absolute path from relative path
 		绝对路径和相对路径
 
+download preview pictures: (added 15.10.04)
+
+下载预览图：（15.10.04添加）
+
+	-P or --pictures: download preview pictures from dindingo.com or elsewhere, needs -D/--download
+	-P或--pictures：从下载预览图到本地，需要开启-D/--download选项
+
+save file info into webpage: (added 15.10.04)
+
+将文件信息保存成网页：（15.10.04添加）
+
+	-W or --webpage: save file info into <tid>.html inside its folder, needs -D/--download AND -P/--pictures
+	-W或--webpage：将文件信息保存到<tid>.html，放置于（视♂频和解压密码所在的）目录里，需要开启-D/--download和-P/--pictures选项（其实我还保存了一份index.html方便直接用目录来访问）
+
 Theorically you CAN put contradictin' options together, 
 
 理论上说你可以把互相矛盾的选项（比如-d和-D，-S、-T和-F，以任何顺序）放一块，
