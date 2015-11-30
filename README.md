@@ -42,7 +42,6 @@ dump levels:
 
 拖♂站级别：
 
-
 	default: only gain info from dindingo.com
 	默认：只从dindingo.com拖下来文件信息，如果是文件模式的话只分析文件内容，换句话说不分析colafile.com网盘链接的信息
 
@@ -51,11 +50,16 @@ dump levels:
 
 	-D or --download: download mode, will download file info AND file from colayun.com aka colafile.com
 	-D或--download：下载模式，除了上述的操作外还会下载片♂子。片♂子和其解压密码会存放在脚本目录下以tid为名的文件夹里
+	
+	--threadfile-only (added 15.11.25): only dump threads from dindingo.com, 
+	--threadfile-only（15.11.25添加）：只从dindingo.com拖下来帖子（的html文件），
+	
+ 	and store it into "DumpedThreads" folder
+	并将其存入DumpedThreads目录
 
 sidefield/threads/flie:
 
 副板块/单帖子/文件模式：
-
 
 	default: traverse the main threads
 	默认：遍历主板块
@@ -66,6 +70,30 @@ sidefield/threads/flie:
 		i heard the rumor that side threads are the distilled resources of the main threads
 		我听说副板块是主板块的浓缩版，里面全tm是合集，但我一般用副板块来测♂试我的脚本，毕竟主板块帖子太多了
 
+		AND now you can define from which page to which page the script will dump: (added 15.11.25)
+		而且现在你可以指定从哪一页拖到哪一页：（15.11.25添加）
+		
+		--from=<frompage> AND/OR --to=<topage>
+		--from=<frompage> 和/或 --to=<topage>
+		
+			will dump from FIRST page if <frompage> NOT defined
+			如果没有指定<frompage>，就从第一页开始拖
+			
+			will automatically determine LAST page if <topage> NOT defined
+			如果没有指定<topage>，就自动（用dLastPage()函数）确定最后一页（其实这个功能并不好使）
+			
+		--from and --to will JUST be VOID outside default mode and -S/--sidefield
+		如果在默认模式和-S/--sidefield之外使用--from和--to，它们仅仅没有效果而已
+		
+		AND now you can define from which SINGLE page the script will dump: (added 15.11.28)
+		而且现在你可以指定拖哪一单页：（15.11.28添加）
+		
+		--page=<page>
+		--page=<page>
+		
+			equals --from=<page> AND --to=<page>
+			就等于--from=<page>和--to=<page>（但少用一个参数）
+			
 	-T or --thread: dump single thread
 	-T或--thread：只下一个帖子
 
@@ -94,6 +122,57 @@ save file info into webpage: (added 15.10.04)
 
 	-W or --webpage: save file info into <tid>.html inside its folder, needs -D/--download AND -P/--pictures
 	-W或--webpage：将文件信息保存到<tid>.html，放置于（视♂频和解压密码所在的）目录里，需要开启-D/--download和-P/--pictures选项（其实我还保存了一份index.html方便直接用目录来访问）
+
+auto-unpack: (added 15.11.20)
+
+自动解包：（15.10.20添加）
+
+	-A or --auto-unpack: attempt to unpack the .rar/.zip files
+	-A或--auto-unpack：试图用从帖子中拖下来的密码
+	
+	usin' the password dumped from the thread page
+	来解压（拖下来的）.rar/.zip文件
+	
+		if succeed, the original .rar/.zip will be deleted
+		如果成功，原来的.rar/.zip文件将被删除
+		
+		if failed due to incorrect password, 
+		如果由于密码错误未成功，
+		
+		the original .rar/.zip will be left unchanged
+		来的.rar/.zip文件将被保留下来
+		
+	needs -D/--download
+	需要开启-D/--download选项
+	
+encryption: (added 15.11.20)
+
+加密：（15.10.20添加）
+
+	-E or --encrypt: after download, calculate MD5, SHA1 and SHA256 of 
+	-E或--encrypt：下载后，计算<tid>目录的
+	
+	<tid> directory and store individially, archive <tid> directory into a
+	MD5、SHA1和SHA256校验并单独存放，将<tid>目录
+	
+	.rar file with random 64-bit password, delete source files, and 
+	用64位的随机密码加密打包，删除源文件，并
+	
+	store filename-password infomations into pair.txt, needs -D/--download
+	将文件名-密码信息存入pair.txt中，需要开启-D/--download选项
+
+limitation: (added 15.11.29)
+
+设置总文件大小限额：（15.10.04添加）
+
+	--limitation=<limitation>: after each page, check if total file size
+	--limitation=<limitation>：在每一页拖完后，检查总文件大小是否
+	
+	exceeds the limitation, if so the script will be stopped
+	超过了设置的限额，如果超过了的话，脚本将中止
+	
+		the unit of the limitation is MB
+		限额的单位是MB
 
 Theorically you CAN put contradictin' options together, 
 
