@@ -140,7 +140,7 @@ auto-unpack: (added 15.11.20)
 		如果由于密码错误未成功，
 		
 		the original .rar/.zip will be left unchanged
-		来的.rar/.zip文件将被保留下来
+		原来的.rar/.zip文件将被保留下来
 		
 	needs -D/--download
 	需要开启-D/--download选项
